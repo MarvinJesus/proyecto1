@@ -1,0 +1,217 @@
+<!--En las secciones de 8 que complementas las secciones de 4 (anteriores) va el contenido: tablas, graficos, informacion de personal, clientes, rutinas, y asi  -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <link rel="stylesheet" href="css/estandarCssElmer.css">
+    <title>Phaeton's Gym</title>
+  </head>
+
+  <body >
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioInstructor.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Rutinas</a>
+              <div class="">
+                <ul>
+                  <li><a href="crearRutina.html">Crear</a></li>
+                  <li><a href="visualizarRu.html">Visualizar</a></li>
+                  <li><a href="modificarParametrosRutinas.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav" href="#">Citas</a>
+              <div class="">
+                <ul>
+                  <li><a href="pruebaResistencia.html">Prueba resistencia</a></li>
+                  <li><a href="citaVisual.html">Visualizar</a></li>
+                  <li><a href="registroMedidas.html">Registrar medidas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link4" class="botonesNav" href="#">Ejercicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarEjercicio.html">Visualizar ejercicios</a></li>
+                  <li><a href="modificarEjercicios.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link5" class="botonesNav" href="#">Maquinaria</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarInfoMaquinaria.html">Informacion maquinaria</a></li>
+                  <li><a href="indexModificarInfoMaquina.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  <main class="container">
+    <div id="tituloPagina">
+      <h4>Prueba de resistencia</h4>
+      <!--Aca va el nombre de la pagina en un h4 -->
+    </div>
+    <div id="divError" class="ocultar">
+    <span>Por favor rellene los campos en rojo</span>
+    </div>
+    <section id="infoGym" class=" container col-xs-12 col-sm-12 col-md-12">
+      <form class="style-2" action="index.html" method="post">
+        <label for="idUsuario"><h4>Cedúla:</h4></label>
+        <input type="text" id="idUsuario" placeholder="Escriba la cedúla...">
+        <br>
+        <br>
+        <label for="fecha1Rm"><h4>Fecha:</h4></label>
+        <input type="date" id="fecha1Rm">
+        <br>
+        <br>
+        <label for="objecCliente"><h4>Objetivo del Cliente</h4></label>
+        <select class="objecCliente" id="objetivoCliente">
+          <option value="" selected>none</option>
+          <option value="acondicionamiento">acondicionamiento fisico</option>
+          <option value="hipertrofia">hipertrofia</option>
+          <option value="potencia">potencia</option>
+          <option value="resistencia">resistencia</option>
+          <option value="fuerza">fuerza</option>
+        </select>
+
+
+
+        <label for=""><h4>Prueba de Resistencia</h4></label>
+        <select class="pruebaResistencia" id="pruebaRe">
+          <option value="" selected>none</option>
+          <option value="1RM" id="unRm">1RM</option>
+          <option value="5RM" id="cincoRm">5RM</option>
+          <option value="8RM" id="ochoRm">8RM</option>
+        </select>
+      </form>
+      <br>
+      <div class="tablaCalcular">
+        <table>
+          <thead>
+            <tr>
+              <th>Ejercicios</th>
+              <th>1er Intento</th>
+              <th>2do Intento</th>
+              <th>3er Intento</th>
+              <th>1Rm Teorico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abdomen</td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="abdomenPrimerIntento" onblur="validarCelda()">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="abdomenSegundoIntento">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="abdomenTercerIntento">
+                </td>
+                <td>
+                  <input type="text" name="name" value="0" id="abdomenTeorico">
+                </td>
+            </tr>
+            <tr>
+              <td>Press de pecho</td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="pechoPrimerIntento" value="">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="pechoSegundoIntento" value="">
+                </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="pechoTercerIntento" value="">
+              </td>
+              <td>
+                <input type="text" name="name" value="0" id="pechoTeorico">
+              </td>
+            </tr>
+            <tr>
+              <td>Brazos</td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="brazosPrimerIntento">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="brazosSegundoIntento">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="brazosTercerIntento">
+              </td>
+              <td>
+                <input type="text" name="name" value="0" id="brazoTeorico">
+              </td>
+            </tr>
+            <tr>
+              <td>Flexion de rodilla</td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="piernasPrimerIntento">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="piernasSegundoIntento">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="piernasTercerIntento">
+              </td>
+              <td>
+                <input type="text" name="name" value="0" id="piernaTeorico">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Espalda</td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="espaldaPrimerIntento">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="espaldaSegundoIntento">
+              </td>
+              <td>
+                <input type="text" placeholder="Introduzca Kg" id="espaldaTercerIntento">
+              </td>
+              <td>
+                <input type="text" id="" value="0" id="espaldaTeorico">
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="calcularId">
+
+      <input type="button" name="Calcular" value="Calcular 1RM" id="calcularRm">
+
+      <input type="button" name="Generar" value="Generar Rutina" id="generarRutina">
+
+      <a href="inicioInstructor.html"id="volver" class="volver">Volver</a>
+
+      <div id="alert2">
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <!-- <footer>Phaetons Gym-Blue Rhino-2016</footer> -->
+
+
+
+
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/pruebaResistenciaEstandar.js"></script>
+  </body>
+</html>

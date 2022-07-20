@@ -1,0 +1,131 @@
+<!--En las secciones de 8 que complementas las secciones de 4 (anteriores) va el contenido: tablas, graficos, informacion de personal, clientes, rutinas, y asi  -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCssCoto.css">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <title>Phaeton's Gym</title>
+  </head>
+
+  <body >
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioInstructor.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Rutinas</a>
+              <div class="">
+                <ul>
+                  <li><a href="crearRutina.html">Crear</a></li>
+                  <li><a href="visualizarRu.html">Visualizar</a></li>
+                  <li><a href="modificarParametrosRutinas.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav" href="#">Citas</a>
+              <div class="">
+                <ul>
+                  <li><a href="pruebaResistencia.html">Prueba resistencia</a></li>
+                  <li><a href="citaVisual.html">Visualizar</a></li>
+                  <li><a href="registroMedidas.html">Registrar medidas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link4" class="botonesNav" href="#">Ejercicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarEjercicio.html">Visualizar ejercicios</a></li>
+                  <li><a href="modificarEjercicios.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link5" class="botonesNav" href="#">Maquinaria</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarInfoMaquinaria.html">Informacion maquinaria</a></li>
+                  <li><a href="indexModificarInfoMaquina.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  <main class="container">
+
+    <div id="tituloPagina">
+      <h4>Ingresar medidas</h4>
+      <!--Aca va el nombre de la pagina en un h4 -->
+    </div>
+    <!--Los tamanos se manejas asi: las columnas xs son de 12 y las medianas son de 8/4 o 12 en ciertos casos  -->
+    <section class=" infoSeccion col-xs-12 col-md-12">
+      <form class="style-2" action="index.html" method="post">
+          <div>
+            <label for="txtUsuario">Nombre de usuario</label>
+            <input type="text" id="txtUsuario">
+            <label for="txtEspalda">Espalda</label>
+            <input type="text" id="txtEspalda">cm
+            <label for="txtPecho">Pecho</label>
+            <input type="text" id="txtPecho">cm
+            <label for="txtCintura">Cintura</label>
+            <input type="text" id="txtCintura">cm
+            <label for="txtCadera">Cadera</label>
+            <input type="text" id="txtCadera">cm
+            <label for="txtIzqBiceps,txtDerBiceps">Biceps</label>
+            <input type="text" id="txtIzqBiceps" placeholder="Medida izquierda">cm
+            <input type="text" id="txtDerBiceps" placeholder="Medida derecha">cm
+            <label for="txtIzqMuslo,txtDerMuslo">Muslo</label>
+            <input type="text" id="txtIzqMuslo" placeholder="Medida izquierda">cm
+            <input type="text" id="txtDerMuslo" placeholder="Medida derecha">cm
+            <label for="txtIzqPantorrillas,txtDerPantorrillas">Pantorrillas</label>
+            <input type="text" id="txtIzqPantorrillas" placeholder="Medida izquierda">cm
+            <input type="text" id="txtDerPantorrillas" placeholder="Medida derecha">cm
+            <label for="txtIzqTriceps,txtDerTriceps">Triceps</label>
+            <input type="text" id="txtIzqTriceps" placeholder="Medida izquierda">cm
+            <input type="text" id="txtDerTriceps" placeholder="Medida derecha">cm
+            <label for="txtIzqSubescapular,txtDerSubescapular">Subescapular</label>
+            <input type="text" id="txtIzqSubescapular" placeholder="Medida izquierda">cm
+            <input type="text" id="txtDerSubescapular" placeholder="Medida derecha">cm
+            <label for="txtIzqSubEspinal,txtDerSubEspinal">Sub Espinal</label>
+            <input type="text" id="txtIzqSubEspinal" placeholder="Medida izquierda">cm
+            <input type="text" id="txtDerSubEspinal" placeholder="Medida derecha">cm
+            <label for="txtIzqAbdominal,txtDerAbdominal">Abdominal</label>
+            <input type="text" id="txtIzqAbdominal" placeholder="Medida izquierda">cm
+            <input type="text" id="txtDerAbdominal" placeholder="Medida derecha">cm
+            <label for="txtIzqMuslo,txtDerMuslo">Muslo</label>
+            <input type="text" id="txtIzqMuslo" placeholder="Medida izquierda">cm
+            <input type="text" id="txtDerMuslo" placeholder="Medida derecha">cm
+            <label for="txtPorcentajeGrasa">Porcentaje de grasa</label>
+            <input type="text" id="txtPorcentajeGrasa">%
+            <label for="txtPeso">Peso</label>
+            <input type="text" id="txtPeso">kg
+            <label for="txtAltura">Altura</label>
+            <input type="text" id="txtAltura" placeholder="Ejemplo: 1.70">
+            <!--<label for="imcResul">IMC</label>
+            <input type="text" name="imc" value="" id="imcResul">-->
+            <span id="imcResul">Imc,peso graso y peso magro se calculan automaticamente*</span>
+            <input type="button" value="Guardar datos" id="btnGuardar" onclick="validar(),calcularIMC(),obtenerFecha(),calcularPesoGraso(),clasificarImc(),calcularPesoMagro(),calcularGrasaSubCutanea()">
+            <input type="submit" value="Cancelar" id="btnCancelar">
+          </div>
+      </form>
+
+
+    </section>
+
+  </main>
+  <footer>Phaetons Gym-Blue Rhino-2016</footer>
+
+
+  <script src="js/registroMedidas1.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

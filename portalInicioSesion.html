@@ -1,0 +1,55 @@
+<!--*Elaborado por: Blue Rhino
+    Fecha: 11 marzo 2016-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phaeton's Gym</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilosInicioSesion.css">
+  </head>
+  <body>
+    <header>
+      <div id="divHeader" class="container">
+        <nav>
+          <h3>Phaeton's Gym</h3>
+          <a id="inicio" class="botonesNav" href="index.html">Inico</a>
+          <a id="servicios" class="botonesNav" href="conozcanos.html">Quienes Somos</a>
+          <a id="about" class="botonesNav" href="servicios.html">Servicios</a>
+          <a id="iniciar" class="botonesNav" href="portalAcceso.html">Iniciar Sesion</a>
+        </nav>
+      </div>
+    </header>
+
+    <div  class="container ">
+      <section id="espacio" class="col-xs-12 col-sm-12 col-md-12">
+        <h2>Portal Acceso</h2>
+      </section>
+
+      <section id="portalEmpleado" class=" container col-xs-12 col-sm-12 col-md-6">
+        <form class="login">
+          <h1 class="login-title">Acceso Empleado</h1>
+          <input type="text" class="login-input" placeholder="Correo Electrónico" autofocus id="txtCorreo">
+          <input type="password" class="login-input" placeholder="Contraseña" id="txtContrasena">
+          <input type="button" value="Ingresar" class="login-button"  id="btnIngresar">
+          <p class="login-lost"><a href="recuperarContrasena.html">¿Olvidaste la contraseña?</a></p>
+        </form>
+      </section>
+
+      <section id="portalCliente" class=" container col-xs-12 col-sm-12 col-md-6">
+        <form class="login">
+          <h1 class="login-title">Acceso Cliente</h1>
+          <input type="text" class="login-input" placeholder="Correo Electrónico" autofocus id="txtCorreo2">
+          <input type="password" class="login-input" placeholder="Contraseña" id="txtContrasena2">
+          <input type="button" value="Ingresar" class="login-button"  id="btnIngresar2">
+          <p class="login-lost "><a href="recuperarContrasena.html">¿Olvidaste la contraseña?</a></p>
+          <p class="login-lost"><a href="registrar.html">¿No tienes cuenta? Registrate</a></p>
+        </form>
+      </section>
+    </div>
+    <script src="js/logicPortalAcceso.js"></script>
+  </body>
+</html>

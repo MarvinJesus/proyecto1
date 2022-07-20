@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <link rel="stylesheet" href="css/estandarCssDaniel.css">
+    <title>Phaeton's Gym</title>
+  </head>
+
+  <body >
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioCliente.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Servicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="historial.html">Historial</a></li>
+                  <li><a href="consultarEstadisticas.html">Estadisticas</a></li>
+                  <li><a href="solicitarCitas.html">Citas</a></li>
+                  <li><a href="rutinaCliente.html">Rutinas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav"href="conozcanos.html">Quienes somos</a></li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <main class="container">
+
+    <div id="tituloPagina">
+      <h4>Historial</h4>
+      <!--Aca va el nombre de la pagina en un h4 -->
+    </div>
+    <!--Los tamanos se manejas asi: las columnas xs son de 12 y las medianas son de 8/4 o 12 en ciertos casos  -->
+    <section class=" infoSeccion col-xs-12 col-md-4">
+
+      <div class="divBotonesSeccion">
+        <input class="botonesSeccion" id="btnPeso" type="button" name="name" value="Peso">
+        <input class="botonesSeccion" id="btnPecho" type="button" name="name" value="Pecho">
+        <input class="botonesSeccion"  id="btnCintura" type="button" name="name" value="Cintura">
+        <input class="botonesSeccion" id="btnCadera" type="button" name="name" value="Cadera">
+        <input class="botonesSeccion" id="btnEspalda" type="button" name="name" value="Espalda">
+        <inputclass="botonesSeccion" id="btnBiceps" type="button" name="name" value="Bíceps">
+        <input class="botonesSeccion" id="btnPantorrillas" type="button" name="name" value="Pantorrillas">
+        <input class="botonesSeccion" id="btnMuslos" type="button" name="name" value="Muslos">
+        <input class="botonesSeccion" id="btnTriceps" type="button" name="name" value="Tríceps">
+        <input class="botonesSeccion" id="btnSupraspinas" type="button" name="name" value="Supraspinas">
+        <input class="botonesSeccion"id="btnAbdominales" type="button" name="name" value="Abdominales">
+        <input class="botonesSeccion" id="btnSubescapular" type="button" name="name" value="Subescapular">
+      </div>
+
+
+    </section>
+    <section class=" infoSeccion col-xs-12 col-md-8">
+      <div class="grafEsta tblSeccion">
+      </div>
+      <canvas id="canvas" width="600"
+      height="400"></canvas>
+
+
+    </section>
+
+  </main>
+  <footer>Phaetons Gym-Blue Rhino-2016</footer>
+    <script src="Chart.js-master/Chart.js"></script>
+    <script src="js/historial.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

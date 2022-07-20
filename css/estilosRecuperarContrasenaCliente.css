@@ -1,0 +1,282 @@
+font-face {
+  font-family: cornerstone;
+  src: url('../fonts/Cornerstone.ttf');
+}
+@font-face {
+  font-family: fira-bold;
+  src: url(FiraSans-Bold.otf);
+}
+
+@font-face {
+  font-family: sinkin;
+  src: url('../fonts/SinkinSans-400Regular.otf');
+}
+
+body{
+  background: #fff;
+  font-family: cornerstone;
+}
+
+header{
+  margin: 0 0 40px 0;
+  background: #616161;
+  height: 35px;
+}
+nav{
+  display: inline;
+  height: 100%;
+}
+h3{
+  display: inline;
+  background: #E54028;
+  color: #fff;
+  padding: 10px 20px;
+}
+a{
+  padding: 11px 20px;
+  max-width: 200px;
+  height: 20px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 0;
+}
+a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+header nav #inicio{
+  background-image: -webkit-linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #servicios{
+  background-image: -webkit-linear-gradient(45deg, #32742C 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #32742C 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #about{
+  background-image: -webkit-linear-gradient(45deg, #D70060 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #D70060 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 700ms ease-in-out;
+  transition: background 700ms ease-in-out;
+}
+header nav #iniciar{
+  background-image: -webkit-linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 700ms ease-in-out;
+  transition: background 700ms ease-in-out;
+
+}
+header nav #inicio:hover{
+  /*background: #F18D05;*/
+  background-position: 0;
+
+}
+header nav #servicios:hover{
+  /*background: #32742C;*/
+  background-position: 0;
+}
+header nav #about:hover{
+  /*background: #D70060;*/
+  background-position: 0;
+}
+header nav #iniciar:hover{
+  /*background: #E54028;*/
+  background-position: 0;
+}
+header nav #registrar:hover{
+  background: #D0D102;
+}
+header .div1 #cerrarSesion{
+  background-image: -webkit-linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 700ms ease-in-out;
+  transition: background 700ms ease-in-out;
+}
+header .div1 #cerrarSesion:hover{
+  background-position: 0;
+}
+
+.div1{
+  float: right;
+  display: inline-block;
+}
+img{
+  height: 100px;
+  width: 100px;
+}
+
+.botonesNav{
+  display: inline;
+}
+.botonesSeccion{
+  display: block;
+  width: 400px;
+  /*text-align: left;
+  border: none;
+  background: #E54028;
+  color: #fff;
+  margin: none;*/
+  padding: 18px;
+  font-family: fira-bold;
+  font-size: 24px;
+}
+/*.botonesSeccion:hover{
+  background: #fff;
+  color: #F18D05;
+  border-top: 1px solid #E54028;
+  border-left: 1px solid #E54028;
+}*/
+section{
+  background: #fff;
+  height: 100%;
+  padding: 0;
+  font-family: sinkin;
+}
+#infoGym{
+  background:#fff;
+  border-radius: 40px 0 0 0;
+}
+#seccionCanvas{
+  /*border-top: 1px solid #E54028;
+  border-bottom: 1px solid #E54028;
+  border-right: 1px solid #E54028;*/
+  background: #fff;
+}
+.container{
+  padding: 0;
+
+}
+canvas{
+  width: 300px;
+  height: 400px;
+}
+
+#cerrarSesion{
+  background: transparent;
+  border: none;
+  padding: 10px 10px 5px 0;
+  color: #fff;
+}
+#imgSeccion{
+  border-radius: 40px 0 0 0;
+}
+.botonesSeccion {
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #01A4A4;
+  font-family: cornerstone;
+  background: white;
+
+  background-image: -webkit-linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 700ms ease-in-out;
+  transition: background 700ms ease-in-out;
+}
+#nombreGym{
+
+}
+#ubicacion{
+
+}
+a:hover{
+  background-position: 0;
+}
+.botonesSeccion:hover {
+  background-position: 0;
+}
+#espacio{
+  background: #c1c1c1;
+  height: 60px;
+
+}
+#infoGym{
+  margin: 40px 0;
+}
+h2{
+
+}
+
+
+.login {
+  margin: 50px auto;
+  width: 500px;
+  padding: 30px 25px;
+  background: white;
+  border: 1px solid #c4c4c4;
+}
+
+h1.login-title {
+  margin: -28px -25px 25px;
+  padding: 15px 25px;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #616161;
+  text-align:center;
+  background: #f7f7f7;
+
+}
+
+.login-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left:10px;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login-input:focus {
+    border-color:#6e8095;
+    outline: none;
+  }
+.login-button {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background: #E54028;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline:0;
+}
+
+.login-lost
+{
+  text-align:center;
+  margin-bottom:0px;
+}
+
+#pregunta{
+  font-family: fira-bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+#msj{
+  margin: 15px 0 0 0;
+  display: inline-block;
+  font-family: fira-bold;
+  font-size: 20px;
+}

@@ -1,0 +1,106 @@
+<!--*Elaborado por: Blue Rhino
+    Fecha: 11 marzo 2016-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phaeton's Gym</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\estilosModificarCliente.css">
+    <link rel="stylesheet" href="css/estandarCss.css">
+
+  </head>
+  <body>
+
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioAdmin.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="">Personal</a>
+              <div class="">
+                <ul>
+                  <li><a href="consultarInfoInstructoresAdmin.html">Informacion</a></li>
+                  <li><a href="consultarEstadisticasEmpleados.html">Estadisticas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav" href="#">Clientes</a></li>
+            <li><a id="link4" class="botonesNav" href="#">Ejercicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="mostrarEjerciciosAdmin.html">Visualizar</a></li>
+                  <li><a href="modificarEjerciciosAdmin.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link5" class="botonesNav" href="#">Maquinaria</a>
+              <div class="">
+                <ul>
+                  <li><a href="mostrarInfoMaquinariaAdmin.html">Visualizar</a></li>
+                  <li><a href="modificarInfoMaquinariaAdmin.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link6" class="botonesNav" href="citaVisualAdmin">Citas</a></li>
+            <li><a id="link7" class="botonesNav" href="modificarInfoGym.html">Datos Gimnasio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div  class="container ">
+      <section id="espacio" class="col-xs-12 col-sm-12 col-md-12">
+        <h2>Modificar Datos</h2>
+      </section>
+
+      <section id="modificarDatos" class="container col-xs-12 col-sm-12 col-md-12">
+
+        <div class="divModificar">
+          <label for="txtNombre">Nombre</label>
+          <input  class="texto" type="text" id="txtNombre" placeholder="Escriba su nombre">
+        </div>
+        <div class="divModificar">
+          <label for="txtApellido">Apellido</label>
+          <input class="texto" type="text" id="txtApellido" placeholder="Escriba sus apellidos">
+        </div>
+        <div class="divModificar">
+          <label for="txtDireccion">Dirección</label>
+          <input class="texto" type="text" id="txtDireccion" placeholder="Escriba su dirección">
+        </div>
+        <div class="divModificar">
+          <label for="txtEmail">Correo electronico</label>
+          <input type="texto" id="txtEmail" placeholder="Escriba su nuevo correo" class="texto">
+        </div>
+        <div class="divModificar">
+          <label for="txtEmail2"></label>
+          <input type="texto" id="txtEmail2" placeholder="Confirme su nuevo correo" class="texto">
+        </div>
+        <div class="divModificar">
+          <label for="txtContrasena">Contraseña</label>
+          <input type="password" id="txtContrasena" placeholder="Escriba su nueva contraseña" class="texto">
+        </div>
+        <div class="divModificar">
+          <label for="txtContrasena2"></label>
+          <input type="password" id="txtContrasena2" placeholder="Confirme su nueva contraseña" class="texto">
+        </div>
+        <div class="divModificar">
+          <label for="txtTelefono">Telefono</label>
+           <input type="text" id="txtTelefono"  name="txtTelefono" placeholder="Escriba su telefono"  class="texto">
+        </div>
+        <div class="divModificar">
+          <label for="files">Foto de Perfil</label>
+          <input type="file" id="files" name="files[]" accept="image/*"/>
+          <output id="list"></output>
+        </div>
+        <input class="botonesSeccion" id="btnRegistrar"type="button" value="Actualizar">
+      </section>
+    </div>
+    <script src="js/logicModificarDatosUsuario.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!--En las secciones de 8 que complementas las secciones de 4 (anteriores) va el contenido: tablas, graficos, informacion de personal, clientes, rutinas, y asi  -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <link rel="stylesheet" href="css/estandarCssCoto.css">
+    <title>Phaeton's Gym</title>
+  </head>
+
+  <body >
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioCliente.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Servicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="historial.html">Historial</a></li>
+                  <li><a href="consultarEstadisticas.html">Estadisticas</a></li>
+                  <li><a href="solicitarCitas.html">Citas</a></li>
+                  <li><a href="rutinaCliente.html">Rutinas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav"href="conozcanos.html">Quienes somos</a></li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  <main class="container">
+    <div class="">
+
+      <div id="tituloPagina">
+      <h4>Solicitar / visualizar rutina</h4>
+      <!--Aca va el nombre de la pagina en un h4 -->
+      </div>
+      <!--Los tamanos se manejas asi: las columnas xs son de 12 y las medianas son de 8/4 o 12 en ciertos casos  -->
+      <section id="infoGym" class=" infoSeccion col-xs-6 col-sm-6 col-md-6">
+        <button class="button-style" type="button" onclick="mostrar('contenido1') & ocultar('contenido2')">Solicitar rutina</button>
+      </section>
+      <section class=" infoSeccion col-xs-6 col-sm-6 col-md-6">
+        <button id="visualizar" class="button-style" type="button" onclick="mostrar('contenido2') & ocultar('contenido1'), rutinaEjercicios()">Visualizar</button>
+      </section>
+      <section class=" infoSeccion col-xs-12 col-sm-12 col-md-12">
+        <div id="divAprobada" class="ocultar">
+          <span>Se ha solicitado satisfactoriamnte su cita</span>
+        </div>
+        <div id="divError" class="ocultar1">
+          <span>Error, realize primero las pruebas</span>
+        </div>
+      <!--En las secciones de 12 van cuadros grandes necesarioa  -->
+      </section>
+
+
+      <section class="oculto col-xs-12 col-sm-12 col-md-12" id="contenido1">
+        <p>Antes de solicitar una rutina debe de haber realizado con anterioridad la cita de control y medicion.</p>
+        <div class="contenido1-style">
+          <div class="btn-control">
+            <button type="button" name="button" href="solicitarCitas.html">Cita control</button>
+          </div>
+          <div class="btn-medicion">
+            <button type="button" name="button" href="solicitarCitas.html">Cita de medicion</button>
+          </div>
+          <div class="btn-rutina">
+            <button type="button" name="button" onclick="validarCitas()">Solicitar Rutina</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="oculto col-xs-12 col-sm-12 col-md-12" id="contenido2">
+        <table id="tblRutinas">
+          <thead>
+            <tr>
+              <th>Rutina</th>
+              <th>Semana 1-2
+                <div class="tabla1" id="tabla1">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Ejercicio</th>
+                        <th>Peso</th>
+                        <th>Repeticiones</th>
+                        <th>Series</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody1">
+
+                    </tbody>
+                  </table>
+                </div>
+              </th>
+              <th>Semana 3-4
+                <div class="tabla2" id="tabla2">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Ejercicio</th>
+                        <th>Peso</th>
+                        <th>Repeticiones</th>
+                        <th>Series</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody2">
+
+                    </tbody>
+                  </table>
+                </div>
+              </th>
+              <th>Semana 5-6
+                <div class="tabla3" id="tabla3">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Ejercicio</th>
+                        <th>Peso</th>
+                        <th>Repeticiones</th>
+                        <th>Series</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody3">
+
+                    </tbody>
+                  </table>
+                </div>
+              </th>
+              <th>Semana 7-8
+                <div class="tabla4" id="tabla4">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Ejercicio</th>
+                        <th>Peso</th>
+                        <th>Repeticiones</th>
+                        <th>Series</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody4">
+
+                    </tbody>
+                  </table>
+                </div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody id="ejercicios">
+
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+  </main>
+  <footer>Phaetons Gym-Blue Rhino-2016</footer>
+
+    <script src="js/LogicrutinasCliente.js"></script>
+    <script src="js/LogicsolicitarRutina.js"></script>
+    <script src="js/LogicvisualizarRutinaCliente.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

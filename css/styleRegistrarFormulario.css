@@ -1,0 +1,472 @@
+@font-face {
+  font-family: cornerstone;
+  src: url('../fonts/Cornerstone.ttf');
+}
+@font-face {
+  font-family: fira-bold;
+  src: url(FiraSans-Bold.otf);
+}
+@font-face {
+  font-family: sinkin;
+  src: url('../fonts/SinkinSans-400Regular.otf');
+}
+body{
+  background: #fff;
+  font-family: cornerstone;
+}
+
+header{
+  margin: 0 0 40px 0;
+  background: #616161;
+  height: 50px;
+}
+nav{
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  padding: 0;
+}
+a{
+  padding: 25px 20px;
+  max-width: 200px;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 0;
+  display: inline-block;
+}
+a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+.botonesNav{
+  display: inline-block;
+  padding: 25px 25px;
+  font-size: 20px;
+}
+#logo{
+  background: #E54028;
+  padding: 25px 8px ;
+  font-size: 22px;
+}
+header nav #link1{
+  margin: 0 0 0 -4px;
+  background-image: -webkit-linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link1:hover{
+
+  background-position: 0;
+}
+header nav #link2{
+  background-image: -webkit-linear-gradient(45deg, #61AE24 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #61AE24 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link2:hover{
+
+  background-position: 0;
+}
+header nav #link3{
+  background-image: -webkit-linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link3:hover{
+
+  background-position: 0;
+}
+header nav #link4{
+  background-image: -webkit-linear-gradient(45deg, #D70060 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #D70060 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link4:hover{
+  background-position: 0;
+}
+header nav #link5{
+  background-image: -webkit-linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link5:hover{
+  background-position: 0;
+}
+header nav #link6{
+  background-image: -webkit-linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link6:hover{
+  background-position: 0;
+}
+header nav #link7{
+  background-image: -webkit-linear-gradient(45deg, #61AE24 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #61AE24 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link7:hover{
+  background-position: 0;
+}
+header nav #link8{
+  background-image: -webkit-linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link8:hover{
+  background-position: 0;
+}
+header nav #cerrarSesion{
+  float: right;
+  background-image: -webkit-linear-gradient(45deg, #32742C 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #32742C 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #cerrarSesion:hover{
+  background-position: 0;
+}
+#tituloPagina{
+  background: #616161;
+  color: white;
+  padding: 10px 10px;
+  margin: 0 0 40px 0;
+}
+
+#tituloPagina{
+
+}
+.botonesSeccion{
+  display: block;
+  width: 300px;
+  /*text-align: left;
+  border: none;
+  background: #E54028;
+  color: #fff;
+  margin: none;*/
+  padding: 18px;
+  font-family: fira-bold;
+  font-size: 24px;
+}
+/*.botonesSeccion:hover{
+  background: #fff;
+  color: #F18D05;
+  border-top: 1px solid #E54028;
+  border-left: 1px solid #E54028;
+}*/
+section{
+  background: #fff;
+  height: 100%;
+  padding: 0;
+  font-family: sinkin;
+}
+canvas{
+  width: 300px;
+  height: 400px;
+}
+#imgSeccion{
+  border-radius: 40px 0 0 0;
+}
+.botonesSeccion {
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #01A4A4;
+  font-family: cornerstone;
+  background: white;
+  background-image: -webkit-linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+a:hover{
+  background-position: 0;
+}
+.botonesSeccion:hover {
+  background-position: 0;
+}
+#canvas{
+  padding: 40px;
+  position: fixed;
+}
+#tblSeccion{
+  border: 2px solid gold;
+  width: 500px;
+  height: 400px;
+  margin: 40px 0;
+}
+#tblSeccion th{
+  padding: 8px;
+}
+#tblSeccion tr{
+  border: 2px solid black;
+
+}
+#tblSeccion td{
+  padding: 15px;
+  border: 2px solid black;
+}
+h4{
+  font-size: 24px;
+}
+.divBotonesSeccion{
+  overflow: scroll;
+  height: 420px;
+}
+.inputTxtForm{
+
+}
+#formulario{
+  border: 2px solid #969696;
+}
+fieldset{
+    padding: 40px;
+    width: 91.5%;
+}
+legend{
+    font-size: 30px;
+    color: black;
+}
+
+/*label{
+    margin: 10px;
+    margin-top: 50px;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    text-align:right;
+    float: left;
+    display: inline-block;
+    clear: both;
+}*/
+/*label:hover,input[type="checkbox"].value:hover{
+    color:#01A4A4;
+    cursor: pointer;
+    font-size: 20px;
+}
+form div input[type="text"],input[type="password"],input[type="date"],input[type="email"],input[type="radio"],V,#paises,#tipoIdentificacion{
+
+   color: #000;
+    font-size: 20px;
+    width: 500px;
+    height: 30px;
+    float: right;
+    margin-top: 50px;
+}
+input[type="text"]:focus,input[type="password"]:focus,{
+    background: #d9f4f3;
+    color: #000;
+    font-size: 18px;
+}
+
+input[type="file"]{
+    font-size: 22px;
+    margin-left: 350px;
+   margin-top: 50px;
+   float: right;
+
+ }*/
+
+.oculto {
+  display:none;
+}
+
+
+/*Inicio de los estilos del formulario*/
+
+
+label{
+    margin: 10px;
+    margin-top: 50px;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    text-align:right;
+    float: left;
+    display: inline-block;
+    clear: both;
+    font-family: cornerstone;
+    
+    
+}
+label:hover,input[type="checkbox"].value:hover{
+    color:#01A4A4;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: cornerstone;
+   
+    
+}
+h5{
+    font-family: cornerstone;
+    font-size: 22px;
+    padding: 50px;
+    clear: both;
+    text-align: center;
+
+    
+}
+form div input[type="text"],input[type="password"],input[type="date"],input[type="email"],#paises,#tipoIdentificacion{
+   
+   color: #000;
+    font-size: 20px;
+    width: 500px;
+    height: 30px;
+    float: right;
+    margin-top: 50px;
+    font-family: cornerstone;
+
+    
+}
+input[type="radio"]{
+    display: inline-block;
+    color: #000;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 500px;
+    height: 20px;
+    float: left;
+    font-family: cornerstone;
+   
+
+
+}
+
+input[type="text"]:focus,input[type="password"]:focus,{
+    background: #d9f4f3;
+    color: #000;
+    font-size: 18px;
+    font-family: cornerstone;
+    
+}
+
+input[type="file"]{
+    font-size: 22px;
+    margin-left: 350px;
+   margin-top: 50px;
+   float: right;
+
+ }
+ #imgPrevisualizacion{
+    margin-top:20px;
+    width: 80px;
+    height: 80px;
+    background: #000;
+    border-radius: 20px;
+    float: right;
+    clear: both;
+    display: inline-block;
+}
+#mostrar1{
+ display: none;
+
+}
+
+textarea{
+    
+    background: #a6ceff;
+    color: #ef6028;
+    font-size: 14px;
+    float:right;
+    height: 100px;
+    font-family: cornerstone;
+    
+}
+textarea:focus{
+    background: #01A4A4 ;
+    color: #000;
+    
+}
+
+
+
+.thumb{
+   
+    width:100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: #000;
+}
+
+   
+
+
+.errorStyle{
+    border: 1px solid red;
+    height: 50px;
+   
+}
+
+#alert1,#alert2,#alert3,#alert4,#alert5,#alert6,#alert7,#alert8,#alert9,#alert10,#alert11,#alert12,#alert13,#alert14,#alert15,#alert16{
+    width: 250px;
+    background-color:#fff;
+    color:red;
+    border: 2px solid red;
+    display: none;
+    font-family: cornerstone;
+    margin-left: 251px; 
+    padding: 7px;
+    clear: both;
+    
+
+  }
+.bienStyle{
+    background: #a6ceff;
+    color: #ef6028;
+    font-size: 18px;
+    width: 500px;
+    height: 30px;
+}
+
+/*Fin de los estilos del formulario*/
+
+#footer{
+  clear:both;
+  text-align:center;
+  padding:5px;
+}
+#btnAcebtarYCancelar{
+    margin-top: 300px;
+}
+
+#files{
+  width: 210px;
+}
+.tituloPreguntaSeguridad{
+  clear: both;
+}
+.noseguirFlotado{
+  clear: both;
+}
+/*Fin: Estructura*/

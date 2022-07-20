@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <link rel="stylesheet" href="css/styleSolicitarCita.css">
+    <title>Phaeton's Gym</title>
+  </head>
+​
+  <body>
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioCliente.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Servicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="historial.html">Historial</a></li>
+                  <li><a href="consultarEstadisticas.html">Estadisticas</a></li>
+                  <li><a href="solicitarCitas.html">Citas</a></li>
+                  <li><a href="rutinaCliente.html">Rutinas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav"href="conozcanos.html">Quienes somos</a></li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="row">
+        <div class="col-xs-12 background-style">
+
+        </div>
+      </div>
+​
+  <div class="container">
+​
+  <!--Seccion para Botones  -->
+    <section id="espacio" class="col-xs-12 col-sm-4 col-md-4">
+​
+
+    <input class="botonesSeccion" type="button" name="citasContro" id="citasContro"value="CitasControl" onclick=" crearCitasContro(this)">
+
+    <input class="botonesSeccion" type="button" name="citasMedicion" id="citasMedicion" value="CitasMedicion" onclick=" crearCitasMedicion(this)">
+
+    <input class="botonesSeccion" type="button" name="citasRecistencias" id="citasRecistencias"value="Citas Recistencias" onclick="crearCitasRecistencias(this)">
+
+
+
+    <input class="botonesSeccion" type="button" name="registrarCita" id="registrarCita" value="Registrar Cita" onclick=" registrarCita()">
+
+    <input class="botonesSeccion" type="button" name="consultarCitas" id="consultarCitas" value="Consultar Citas" onclick=" consultarCitas()">
+
+
+    <div id="cajaParaId">
+       <div id="alert">Hola</div>
+    </div>
+    <input type="button" id="btnBusacarCitas" value="BuscarCitas" onclick="buscarCitasPoId()"></input>
+
+
+
+
+​
+    </section>
+​
+    <!--Seccion para tablas o Canvas  -->
+    <section  class="infoSeccion col-xs-12 col-sm-4 col-md-4">
+        <div id="tituloP" class="row col-xs-12 col-sm-12 col-md-12"></div>
+      <table id="tblInfoCitas">
+
+           <thead>
+
+
+           </thead>
+
+
+          <tbody >
+  ​
+          </tbody>
+
+      </table>
+​
+    </section>
+    <section  class="containercol-xs-12 col-sm-4col-md-4">
+        <div id="contenedorInstructores">
+
+
+
+        </div>
+
+    </section>
+​
+  </div>
+
+​
+  <footer>
+    <p>
+      Phaeton's Gym</p>
+
+  </footer>
+​       <script src="js/solicitarCitas.js"></script>
+​
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

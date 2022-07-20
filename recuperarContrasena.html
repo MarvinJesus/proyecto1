@@ -1,0 +1,45 @@
+<!--*Elaborado por: Blue Rhino
+    Fecha: 11 marzo 2016-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phaeton's Gym</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilosRecuperarContrasenaCliente.css">
+  </head>
+  <body>
+    <header>
+      <div id="divHeader" class="container">
+        <nav>
+          <h3>Phaeton's Gym</h3>
+          <a id="inicio" class="botonesNav" href="index.html">Personal</a>
+          <a id="servicios" class="botonesNav" href="servicios.html">Clientes</a>
+          <a id="about" class="botonesNav" href="#">Maquinaria</a>
+          <a id="iniciar" class="botonesNav" href="">Gimnasio</a>
+        </nav>
+      </div>
+    </header>
+
+    <div  class="container ">
+      <section id="espacio" class="col-xs-12 col-sm-12 col-md-12">
+        <h2>Recuperar Contraseña</h2>
+      </section>
+
+      <section id="seccionRecuperacion" class=" container col-xs-12 col-sm-12 col-md-12">
+        <form class="login">
+          <h1 class="login-title">Pregunta de Seguridad</h1>
+          <input type="text" class="login-input" placeholder="Escriba su correo" autofocus id="correoUsuario">
+          <span id="pregunta">¿Cúal es su ejercicio favorito?</span>
+          <input type="text" class="login-input" placeholder="Escriba su respuesta" autofocus id="respuesta">
+          <input type="button" value="Responder" class="login-button"  id="btnRespuesta">
+          <span id="msj"></span>
+        </form>
+      </section>
+    </div>
+    <script src="js/logicRecuperarContrasena.js"></script>
+  </body>
+</html>

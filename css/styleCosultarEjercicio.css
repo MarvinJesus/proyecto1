@@ -1,0 +1,305 @@
+
+/*Inicio: Estructura*/
+@font-face {
+  font-family: cornerstone;
+  src: url('../fonts/Cornerstone.ttf');
+}
+@font-face {
+  font-family: fira-bold;
+  src: url(FiraSans-Bold.otf);
+}
+@font-face {
+  font-family: sinkin;
+  src: url('../fonts/SinkinSans-400Regular.otf');
+}
+body{
+  background: #fff;
+  font-family: cornerstone;
+}
+
+header{
+  margin: 0 0 40px 0;
+  background: #616161;
+  height: 35px;
+}
+nav{
+  display: inline;
+  height: 100%;
+}
+h3{
+  display: inline;
+  background: #E54028;
+  color: #fff;
+  padding: 10px 20px;
+
+}
+a{
+  padding: 11px 20px;
+  max-width: 200px;
+  height: 20px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 0;
+
+}
+a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+header nav #inicio{
+  background-image: -webkit-linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #servicios{
+  background-image: -webkit-linear-gradient(45deg, #32742C 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #32742C 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #about{
+  background-image: -webkit-linear-gradient(45deg, #D70060 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #D70060 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #iniciar{
+  background-image: -webkit-linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+
+}
+header nav #inicio:hover{
+  /*background: #F18D05;*/
+  background-position: 0;
+
+}
+header nav #servicios:hover{
+  /*background: #32742C;*/
+  background-position: 0;
+}
+header nav #about:hover{
+  /*background: #D70060;*/
+  background-position: 0;
+}
+header nav #iniciar:hover{
+  /*background: #E54028;*/
+  background-position: 0;
+}
+header nav #registrar:hover{
+  background: #D0D102;
+}
+header .div1 #cerrarSesion{
+  background-image: -webkit-linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header .div1 #cerrarSesion:hover{
+  background-position: 0;
+}
+
+.div1{
+  float: right;
+  display: inline-block;
+}
+
+
+.botonesNav{
+  display: inline;
+}
+.botonesSeccion, select{
+  display: inline-block;
+    
+  width: 200px;
+  /*text-align: left;
+  border: none;
+  background: #E54028;
+  color: #fff;
+  margin: none;*/
+  padding: 18px;
+  font-family: fira-bold;
+  font-size: 24px;
+    
+     
+}
+/*.botonesSeccion:hover{
+  background: #fff;
+  color: #F18D05;
+  border-top: 1px solid #E54028;
+  border-left: 1px solid #E54028;
+}*/
+section{
+  background: #fff;
+  height: 100%;
+  padding: 0;
+ font-family: sinkin;
+
+}
+#infoGym{
+  background:#fff;
+  border-radius: 40px 0 0 0;
+}
+
+.container{
+  padding: 0;
+
+}
+
+#cerrarSesion{
+  background: transparent;
+  border: none;
+  padding: 10px 10px 5px 0;
+  color: #fff;
+}
+#imgSeccion{
+  border-radius: 40px 0 0 0;
+}
+.botonesSeccion,select>option {
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #01A4A4;
+  font-family: cornerstone;
+  background: white;
+
+  background-image: -webkit-linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+#nombreGym{
+
+}
+#ubicacion{
+
+}
+a:hover{
+  background-position: 0;
+}
+.botonesSeccion:hover {
+  background-position: 0;
+}
+#espacio{
+  background: #c1c1c1;
+  height: 60px;
+
+}
+.infoGym{
+  margin: 40px 0;
+}
+
+
+
+/*Fin de los estilos del Nav*/
+#seleccionDeEjercicio{
+  display: inline-block;
+}
+
+h2{
+  
+  font-size: 30px;
+  
+
+}
+
+
+ 
+
+
+
+table{
+
+  width: 600px;
+  height: 300px;
+  border: 2px solid #c1c1c1;
+  
+
+ 
+
+
+}
+#nombreEjercicio {
+ width: 700px;
+
+}
+
+tr{
+  
+  border: 5px solid #00A1CB;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+
+
+}
+
+td{
+  
+  border:2px solid #E54028;
+  text-align: center;
+  font-size: 23px;
+  width: 200px;
+  height: 100%;
+
+}
+img{
+  
+  width: 300px;
+  height: 300px;
+}
+.ocultarTabla{
+  visibility: hidden;
+}
+.mostrarTabla{
+  visibility:visible;
+}
+#listaDeEjercicios{
+
+  height: 600px;
+  font-size: 20px;
+  width: 600px;
+
+}
+textarea{
+  height: 100%;
+  width: 100%;
+}
+.styleinput{
+  border:none;
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+#files2{
+  width: 220px;
+}
+#files1{
+  width: 220px;
+}
+.thumb{
+  width: 200px;
+}
+output{
+  width: 300px;
+}
+.widthTd{
+  width: 200px;
+}

@@ -1,0 +1,90 @@
+<!--En las secciones de 8 que complementas las secciones de 4 (anteriores) va el contenido: tablas, graficos, informacion de personal, clientes, rutinas, y asi  -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCssBeeche.css">
+    <title>Phaeton's Gym</title>
+  </head>
+
+  <body >
+    <header >
+      <div class="container">
+        <nav class>
+
+          <a id="logo" class="botonesNav">Phaeton's Gym</a>
+          <a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a>
+
+
+        </nav>
+      </div>
+    </header>
+  <main class="container">
+
+    <div id="tituloPagina">
+      <h4>Grupos Musculares</h4>
+      <!--Aca va el nombre de la pagina en un h4 -->
+    </div>
+    <!--Los tamanos se manejas asi: las columnas xs son de 12 y las medianas son de 8/4 o 12 en ciertos casos  -->
+    <section class=" infoSeccion col-xs-12 col-md-4">
+
+      <div class="divBotonesSeccion">
+        <table>
+          <thead>
+            <tr>
+              <td><input id="btn1" class="botonesSeccion" id="nombreGym" type="button" name="name" value="Espalda"></td>
+            </tr>
+            <tr>
+              <td><input class="botonesSeccion" id="btn2"type="button" name="name" value="Pecho"></td>
+            </tr>
+            <tr>
+              <td><input class="botonesSeccion" id="btn3"type="button" name="name" value="Brazo"></td>
+            </tr>
+            <tr>
+              <td><input class="botonesSeccion" id="btn4"tynpe="button" name="name" value="Abdomen"></td>
+            </tr>
+            <tr>
+              <td><input class="botonesSeccion" id="btn5"type="button" name="name" value="Pantorilla"></td>
+            </tr>
+            <tr>
+              <td><input class="botonesSeccion" id="btn6"type="button" name="name" value="Muslo"></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <!--<div class="divBotonesSeccion">
+        <input id="btn1"  class="botonesSeccion"type="button" name="name" value="Boton 1">
+        <input id="btn2" class="botonesSeccion"type="button" name="name" value="Boton 2">
+        <input id="btn3" class="botonesSeccion"type="button" name="name" value="Boton 3">
+        <input id="btn4" class="botonesSeccion"type="button" name="name" value="Boton 4">
+        <input id="btn5" class="botonesSeccion"type="button" name="name" value="Boton 5">
+        <input id="btn6" class="botonesSeccion"type="button" name="name" value="Boton 6">
+        <input id="btn7" class="botonesSeccion"type="button" name="name" value="Boton 7">
+        <input id="btn8" class="botonesSeccion"type="button" name="name" value="Boton 8">
+        <input id="btn9" class="botonesSeccion"type="button" name="name" value="Boton 9">
+        <input id="btn10" class="botonesSeccion"type="button" name="name" value="Boton 10">
+        <input id="btn11" class="botonesSeccion"type="button" name="name" value="Boton 11">
+        <input id="btn12" class="botonesSeccion"type="button" name="name" value="Boton 12">
+        <input id="btn13" class="botonesSeccion"type="button" name="name" value="Boton 13">
+        <input id="btn14" class="botonesSeccion"type="button" name="name" value="Boton 14">
+        <input id="btn15" class="botonesSeccion"type="button" name="name" value="Boton 15">
+        <input id="btn16" class="botonesSeccion"type="button" name="name" value="Boton 16">
+      </div>-->
+
+
+    </section>
+    <section class=" infoSeccion col-xs-12 col-md-8">
+      <canvas id="myCanvas" width="600" height="400"></canvas>
+    </section>
+  </main>
+
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/gruposMusculares.js"></script>
+  </body>
+</html>

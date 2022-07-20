@@ -1,0 +1,673 @@
+@font-face {
+  font-family: cornerstone;
+  src: url('../fonts/Cornerstone.ttf');
+}
+@font-face {
+  font-family: fira-bold;
+  src: url(FiraSans-Bold.otf);
+}
+
+@font-face {
+  font-family: sinkin;
+  src: url('../fonts/SinkinSans-400Regular.otf');
+}
+
+body{
+  background: #fff;
+  font-family: cornerstone;
+}
+
+header{
+  margin: 0 0 40px 0;
+  background: #616161;
+  height: 50px;
+}
+nav{
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  padding: 0;
+}
+a{
+  padding: 25px 20px;
+  max-width: 200px;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 0;
+  display: inline-block;
+}
+a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+.botonesNav{
+  display: inline-block;
+  padding: 25px 25px;
+  font-size: 20px;
+}
+#logo{
+  background: #E54028;
+  padding: 25px 8px ;
+  font-size: 22px;
+}
+header nav #link1{
+  margin: 0 0 0 -4px;
+  background-image: -webkit-linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link1:hover{
+
+  background-position: 0;
+}
+header nav #link2{
+  background-image: -webkit-linear-gradient(45deg, #61AE24 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #61AE24 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link2:hover{
+
+  background-position: 0;
+}
+header nav #link3{
+  background-image: -webkit-linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link3:hover{
+
+  background-position: 0;
+}
+header nav #link4{
+  background-image: -webkit-linear-gradient(45deg, #D70060 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #D70060 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link4:hover{
+  background-position: 0;
+}
+header nav #link5{
+  background-image: -webkit-linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link5:hover{
+  background-position: 0;
+}
+header nav #link6{
+  background-image: -webkit-linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #F18D05 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link6:hover{
+  background-position: 0;
+}
+header nav #link7{
+  background-image: -webkit-linear-gradient(45deg, #61AE24 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #61AE24 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link7:hover{
+  background-position: 0;
+}
+header nav #link8{
+  background-image: -webkit-linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #E54028 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header nav #link8:hover{
+  background-position: 0;
+}
+header nav #cerrarSesion{
+  float: right;
+  background-image: -webkit-linear-gradient(45deg, #32742C 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #32742C 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 700ms ease-in-out;
+  transition: background 700ms ease-in-out;
+}
+header nav #cerrarSesion:hover{
+  background-position: 0;
+}
+#tituloPagina{
+  background: #616161;
+  color: white;
+  padding: 10px 10px;
+  margin: 0 0 40px 0;
+}
+
+#tituloPagina{
+
+}
+.botonesSeccion{
+  display: block;
+  width: 300px;
+  /*text-align: left;
+  border: none;
+  background: #E54028;
+  color: #fff;
+  margin: none;*/
+  padding: 18px;
+  font-family: fira-bold;
+  font-size: 24px;
+}
+/*.botonesSeccion:hover{
+  background: #fff;
+  color: #F18D05;
+  border-top: 1px solid #E54028;
+  border-left: 1px solid #E54028;
+}*/
+section{
+  background: #fff;
+  height: 100%;
+  padding: 0;
+  font-family: sinkin;
+}
+canvas{
+  width: 300px;
+  height: 400px;
+}
+#imgSeccion{
+  border-radius: 40px 0 0 0;
+}
+.botonesSeccion {
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #01A4A4;
+  font-family: cornerstone;
+  background: white;
+  background-image: -webkit-linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 800ms ease-in-out;
+  transition: background 800ms ease-in-out;
+}
+
+a:hover{
+  background-position: 0;
+}
+.botonesSeccion:hover {
+  background-position: 0;
+}
+#canvas{
+  padding: 40px;
+  position: fixed;
+}
+#tblSeccion{
+  border: 2px solid gold;
+  width: 500px;
+  height: 400px;
+  margin: 40px 0;
+}
+#tblSeccion th{
+  padding: 8px;
+}
+#tblSeccion tr{
+  border: 2px solid black;
+
+}
+#tblSeccion td{
+  padding: 15px;
+  border: 2px solid black;
+}
+h4{
+  font-size: 24px;
+}
+.divBotonesSeccion{
+  overflow: scroll;
+  height: 420px;
+}
+.inputTxtForm{
+
+}
+#formulario{
+  border: 2px solid gold;
+}
+fieldset{
+    padding: 40px;
+    width: 91.5%;
+}
+legend{
+    font-size: 30px;
+    color: black;
+}
+
+/*label{
+    margin: 10px;
+    margin-top: 50px;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    text-align:right;
+    float: left;
+    display: inline-block;
+    clear: both;
+}*/
+/*label:hover,input[type="checkbox"].value:hover{
+    color:#01A4A4;
+    cursor: pointer;
+    font-size: 20px;
+}
+form div input[type="text"],input[type="password"],input[type="date"],input[type="email"],input[type="radio"],V,#paises,#tipoIdentificacion{
+
+   color: #000;
+    font-size: 20px;
+    width: 500px;
+    height: 30px;
+    float: right;
+    margin-top: 50px;
+}
+input[type="text"]:focus,input[type="password"]:focus,{
+    background: #d9f4f3;
+    color: #000;
+    font-size: 18px;
+}
+
+input[type="file"]{
+    font-size: 22px;
+    margin-left: 350px;
+   margin-top: 50px;
+   float: right;
+
+ }*/
+
+.oculto {
+  display:none;
+}
+
+.default{
+  display: block;
+}
+
+
+
+/*Se agrego estos estilos para el formulario ingresar medidas por Juan Jose Coto Fallas */
+
+/*Inicio: Estilos formulario*/
+label, span{
+  display: block;
+  margin: .5em 0 0 0;
+}
+
+.style-2 input[type="text"] {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  transition: border 0.3s;
+}
+.style-2 input[type="text"]:focus,
+.style-2 input[type="text"].focus {
+  border: solid 5px #969696;
+}
+
+.style-1 input[type="text"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+/*Fin: Estilos formulario*/
+
+
+
+
+/*Inicio: Ventanas emergentes*/
+.error{
+  border: 2px solid #e74c3c;
+}
+
+.ocultar{
+  visibility: hidden;
+}
+
+#divError{
+  background: #e74c3c;
+  height: 30px;
+  border-radius: 6px;
+}
+
+#divError span{
+  color: #fff;
+}
+
+.thumb{
+  width: 200px;
+  height: 200px;
+}
+
+#txtError{
+  color: red;
+  font-size: 20px;
+  background: black;
+}
+
+.ocultar1{
+  visibility: hidden;
+}
+
+.error{
+  border: 2px solid #e74c3c;
+}
+
+.ocultar1{
+  visibility: hidden;
+}
+
+#divError1{
+  background: #e74c3c;
+  height: 30px;
+  border-radius: 6px;
+}
+
+#divError1 span{
+  color: #fff;
+}
+
+/*Fin: ventanas emergentes*/
+
+
+
+// BUTTON 4
+.fourth {
+  // background: $yellow;
+  border-color: $yellow;
+  color: #fff;
+  background: {
+    image: linear-gradient(45deg,$yellow 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 300ms ease-in-out;
+
+  &:hover {
+    background-position: 0;
+  }
+}
+
+/*Fin de agregar estos estilos para el formulario ingresar medidas por Juan Jose Coto Fallas */
+
+
+
+
+/*Se agrega estilos para el caso de uso modificar ejercicios*/
+
+/*Inicio: estilo del nav - modificar ejercicios*/
+.nav-modEjercicios{
+  color:  #000;
+  font-size: 26px;
+  line-height: 20px;
+  margin: 0 50px 0 30px;
+}
+
+.nav-modEjercicios:hover{
+  text-decoration: underline;
+  color: #000;
+}
+/*Fin: estilo del nav - modificar ejercicios*/
+
+
+/*Inicio: mostrar - ocultar select y contenido del select*/
+.visibilidadPecho{
+display: block;
+}
+
+.visibilidadBrazo{
+display: none;
+}
+
+.visibilidadEspalda{
+display: none;
+}
+
+.visibilidadPierna{
+display: none;
+}
+
+.visibilidadAbdomen{
+display: none;
+}
+/*Fin: mostrar-ocultar select y contenido del select*/
+
+
+/*Inicio: Estilo de los botones de ejercicios*/
+.btnModificarEjercicios{
+  font-size: 20px;
+  text-align: center;
+}
+
+.btnModificarEjercicios button{
+  margin: 0 30px 35px 0;
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  background: #01A4A4;
+}
+
+.btnModificarEjercicios:hover{
+  box-shadow:0px 0px 0px;
+}
+/*Fin: Estilo de los botones de ejercicios*/
+
+/*Fin de agregar estilos para el caso de uso modificar ejercicios*/
+
+
+
+
+/*Inicio de agregar estilos para el caso de uso crear rutina*/
+
+/*Inicio: Estilos tabla*/
+tr{
+  border: 1px solid #E54028;
+}
+th{
+  border: 1px solid #E54028;
+}
+td{
+  border: 1px solid #E54028;
+}
+/*Fin: Estilos tabla*/
+
+
+
+/*Inicio: Estilo contenido 1*/
+#contenido1 p{
+  text-align: center;
+  font-size: 16px;
+}
+
+.contenido1-style{
+  background-image: url(../imgs/hymfitness.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+}
+/*Fin: Estilo contenido 1*/
+
+
+
+/*Inicio: Estilo contenido 2*/
+#contenido2{
+  margin-bottom: 30px;
+}
+/*Inicio: Estilo contenido2*/
+
+
+/*Fin de agregar estilos para el caso de uso crear rutina*/
+
+
+/*Inicio: Estilos tabla*/
+tr{
+  border: 1px solid #E54028;
+}
+th{
+  border: 1px solid #E54028;
+}
+td{
+  border: 1px solid #E54028;
+}
+/*Fin: Estilos tabla*/
+
+
+
+
+/*Inicio: Estilo contenido 2*/
+#contenido2{
+  margin-bottom: 30px;
+}
+/*Inicio: Estilo contenido2*/
+
+
+
+/*Inicio: Estilos de botones*/
+.button-style{
+  width: 100%;
+  /*text-align: left;
+  border: none;
+  background: #E54028;
+  color: #fff;
+  margin: none;*/
+  padding: 18px;
+  font-family: fira-bold;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #01A4A4;
+  font-family: cornerstone;
+  background: white;
+
+  background-image: -webkit-linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #01A4A4 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 700ms ease-in-out;
+  transition: background 700ms ease-in-out;
+}
+
+.button-style:hover {
+  background-position: 0;
+}
+
+.btn-control{
+  display: inline-block;
+  position: absolute;
+  padding: 340px 0 0 150px;
+  float: left;
+}
+
+.btn-medicion{
+  display: inline-block;
+  position: absolute;
+  padding: 340px 0 0 495px;
+  float: right;
+  margin-left: 340px;
+}
+
+.btn-rutina{
+  display: inline-block;
+  position: absolute;
+  padding: 230px 0 0 470px;
+}
+
+.contenido1-style button{
+  font-size: 20px;
+  color: #fff;
+  background: rgba(108, 108, 108, 0.29);
+  border: 1px solid rgba(108, 108, 108, 0.29);
+  font-size: 24px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.contenido1-style button:hover{
+  text-decoration:underline;
+  background-color: #E54028; /* Green */
+  color: white;
+}
+/*Fin: Estilos de botones*/
+
+
+
+
+/*Inicio: estilo sobre funcion mostrar*/
+.oculto #contenido1 #contenido2{
+  display:none;
+}
+/*Fin: estilo sobre funcion mostrar*/
+
+
+
+
+/*Inicio: Estilo mensaje indiciador al solicitar rutina */
+.error{
+  border: 2px solid #e74c3c;
+}
+
+.bien{
+  border: 2px solid #47b136;
+}
+
+.ocultar{
+  visibility: hidden;
+}
+
+.ocultar1{
+  visibility: hidden;
+}
+
+#divAprobada{
+  background: #47b136;
+  height: 100%;
+  width: auto;
+  border-radius: 6px;
+}
+
+#divAprobada span{
+  text-align: center;
+  color: #fff;
+}
+
+
+#divError{
+  background: #e74c3c;
+  height: 30px;
+  border-radius: 6px;
+}
+
+#divError span{
+  text-align: center;
+  color: #fff;
+}
+
+/*Fin: Estilo mensaje indicador al solicitar rutina*/

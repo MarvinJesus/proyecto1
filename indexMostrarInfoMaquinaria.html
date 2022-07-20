@@ -1,0 +1,113 @@
+﻿
+<!--En las secciones de 8 que complementas las secciones de 4 (anteriores) va el contenido: tablas, graficos, informacion de personal, clientes, rutinas, y asi  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <link rel="stylesheet" href="css/styleMostrarInfoMaquinaria.css">
+    <title>Phaeton's Gym</title>
+  </head>
+  <body>
+
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioInstructor.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Rutinas</a>
+              <div class="">
+                <ul>
+                  <li><a href="crearRutina.html">Crear</a></li>
+                  <li><a href="visualizarRu.html">Visualizar</a></li>
+                  <li><a href="modificarParametrosRutinas.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav" href="#">Citas</a>
+              <div class="">
+                <ul>
+                  <li><a href="pruebaResistencia.html">Prueba resistencia</a></li>
+                  <li><a href="citaVisual.html">Visualizar</a></li>
+                  <li><a href="registroMedidas.html">Registrar medidas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link4" class="botonesNav" href="#">Ejercicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarEjercicio.html">Visualizar ejercicios</a></li>
+                  <li><a href="modificarEjercicios.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link5" class="botonesNav" href="#">Maquinaria</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarInfoMaquinaria.html">Informacion maquinaria</a></li>
+                  <li><a href="indexModificarInfoMaquina.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      <main class="container">
+      <div id="tituloPagina">
+
+        <h4>Consultar Maquinaria</h4>
+      <!--Aca va el nombre de la pagina en un h4 -->
+      </div>
+
+        <section class=" infoSeccion col-xs-12 col-md-4">
+
+          <div class="divBotonesSeccion" id="listaMaquinas">
+            <input type="button" class="botonesSeccion" value="GLUTE"  onclick="crearTblInfoMaquina('0')">
+            <input type="button" class="botonesSeccion" value="TRICEPS DIP"  onclick="crearTblInfoMaquina('1')">
+            <input type="button" class="botonesSeccion" value="TRICEPS DIV"  onclick="crearTblInfoMaquina('2')">
+            <input type="button" class="botonesSeccion" value="TRICEPS EXT"  onclick="crearTblInfoMaquina('3')">
+            <input type="button" class="botonesSeccion" value="BICEPS CURL"  onclick="crearTblInfoMaquina('4')">
+            <input type="button" class="botonesSeccion" value="CAMBERL CURL"  onclick="crearTblInfoMaquina('5')">
+            <input type="button" class="botonesSeccion" value="SEATED ROW"  onclick="crearTblInfoMaquina('6')">
+            <input type="button" class="botonesSeccion" value="VERTICA ROW"  onclick="crearTblInfoMaquina('7')">
+            <input type="button" class="botonesSeccion" value="LONG PULLY"  onclick="crearTblInfoMaquina('8')">
+            <input type="button" class="botonesSeccion" value="INCLINE PRESS"  onclick="crearTblInfoMaquina('9')">
+            <input type="button" class="botonesSeccion"  value="DONKEY CALF" onclick="crearTblInfoMaquina('10')">
+            <input type="button" class="botonesSeccion" value="11" onclick="crearTblInfoMaquina('11')">
+            <input type="button" class="botonesSeccion" value="12" onclick="crearTblInfoMaquina('12')">
+            <input type="button" class="botonesSeccion" value="13" onclick="crearTblInfoMaquina('13')">
+            <input type="button" class="botonesSeccion" value="14" onclick="crearTblInfoMaquina('14')">
+          </div>
+
+          </section>
+
+          <section class=" infoSeccion col-xs-12 col-md-8">
+
+             <table id="tblInfoMaquinas">
+                  <thead>
+
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+          </table>
+
+          </section>
+
+
+
+      </main>
+
+    <footer>Phaetons Gym-Blue Rhino-2016</footer>
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/logicMostrarInfoMaquinaria.js"></script>
+  </body>
+</html>

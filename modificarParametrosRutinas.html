@@ -1,0 +1,81 @@
+<!--*Elaborado por: Blue Rhino
+    Fecha: 1 marzo 2016-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phaeton's Gym</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <link rel="stylesheet" href="css/estilosModificarParametros.css">
+
+  </head>
+  <body>
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioInstructor.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Rutinas</a>
+              <div class="">
+                <ul>
+                  <li><a href="crearRutina.html">Crear</a></li>
+                  <li><a href="visualizarRu.html">Visualizar</a></li>
+                  <li><a href="modificarParametrosRutinas.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav" href="#">Citas</a>
+              <div class="">
+                <ul>
+                  <li><a href="pruebaResistencia.html">Prueba resistencia</a></li>
+                  <li><a href="citaVisual.html">Visualizar</a></li>
+                  <li><a href="registroMedidas.html">Registrar medidas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link4" class="botonesNav" href="#">Ejercicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarEjercicio.html">Visualizar ejercicios</a></li>
+                  <li><a href="modificarEjercicios.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link5" class="botonesNav" href="#">Maquinaria</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarInfoMaquinaria.html">Informacion maquinaria</a></li>
+                  <li><a href="indexModificarInfoMaquina.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div  class="container ">
+      <section id="espacio" class="col-xs-12 col-sm-12 col-md-12">
+        <h2>Modificación de los parámetros de la Rutina</h2>
+      </section>
+      <section id="parametros" class=" container col-xs-12 col-sm-12 col-md-12">
+        <table id="parametrosRutina">
+        	<tr id="cabecera">
+            <th id="nomRutina"></th><th colspan=3>Semana 1-2</th><th colspan=3>Semana 3-4</th><th colspan=3>Semana 5-6</th><th colspan=3>Semana 7-8</th>
+        	</tr>
+        	<tr id="nomParametros">
+        		<th>Ejercicio</th><th>Peso</th><th>Serie</th>	<th>Repeticiones</th><th>Peso</th><th>Serie</th>	<th>Repeticiones</th><th>Peso</th><th>Serie</th><th>Repeticiones</th><th>Peso</th><th>Serie</th><th>Repeticiones</th>
+          </tr>
+        </table>
+        <input type="button" value="Agregar Ejercicio" id="btnAgregarFila" class="botonesSeccion">
+      </section>
+    </div>
+    <script src="js/logicModificarParametrosRutinas.js"></script>
+  </body>
+</html>

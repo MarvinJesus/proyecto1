@@ -1,0 +1,185 @@
+/*Incio: Nav Basico para cliente e inicio normal*/
+
+nav div ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav > div> ul > li{
+  float: left;
+}
+
+nav div ul li a{
+  text-decoration: none;
+  display: block;
+  width: 190px;
+  text-align: center;
+}
+
+nav >div> ul >li:hover div{
+  display: table;
+}
+
+nav div ul li div{
+  width: 120px;
+  position: absolute;
+  background: #27a12b;
+  box-sizing:border-box;
+  display: none;
+}
+
+nav > div > ul >li >div >ul >li>a{
+  padding: 10px;
+  float: inherit;
+}
+
+/*Fin: Nav Basico para cliente e inicio normal*/
+
+
+
+
+/*Incio: Nav Basico para el instructor*/
+
+.nav-instructor nav div ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav-instructor nav > div> ul > li{
+  float: left;
+}
+
+.nav-instructor nav div ul li a{
+  text-decoration: none;
+  display: block;
+  width:150px;
+  text-align: center;
+}
+
+.nav-instructor nav >div> ul >li:hover div{
+  display: table;
+}
+
+.nav-instructor nav div ul li div{
+  width: 120px;
+  position: absolute;
+  background: #27a12b;
+  box-sizing:border-box;
+  display: none;
+}
+
+.nav-instructor nav > div > ul >li >div >ul >li>a{
+  padding: 10px;
+}
+
+/*Fin: Nav Basico para el instructor*/
+
+
+
+
+/*Inicio: Nav Basico para secretaria*/
+
+.nav-secretaria nav div ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav-secretaria nav > div> ul > li{
+  float: left;
+}
+
+.nav-secretaria nav div ul li a{
+  text-decoration: none;
+  display: block;
+  width:150px;
+  text-align: center;
+}
+
+.nav-secretaria nav >div> ul >li:hover div{
+  display: table;
+}
+
+.nav-secretaria nav div ul li div{
+  width: 120px;
+  position: absolute;
+  background: #27a12b;
+  box-sizing:border-box;
+  display: none;
+}
+
+.nav-secretaria nav > div > ul >li >div >ul >li>a{
+  padding: 10px;
+}
+
+/*Fin: Nav Basico para secretaria*/
+
+
+
+
+/*Inicio: Nav Basico para el Administrador*/
+
+.nav-administrador nav div ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav-administrador nav > div> ul > li{
+  float: left;
+}
+
+.nav-administrador nav div ul li a{
+  text-decoration: none;
+  display: block;
+  width:150px;
+  text-align: center;
+}
+
+.nav-administrador nav >div> ul >li:hover div{
+  display: table;
+}
+
+.nav-administrador nav div ul li div{
+  width: 120px;
+  position: absolute;
+  background: #27a12b;
+  box-sizing:border-box;
+  display: none;
+}
+
+.nav-about nav div ul li div{
+  width: 120px;
+  position: absolute;
+  background: #113F8C;
+  box-sizing:border-box;
+  display: none;
+}
+
+.nav-iniciar nav div ul li div{
+  width: 120px;
+  position: absolute;
+  background: #616161;
+  box-sizing:border-box;
+  display: none;
+}
+
+.nav-registrar nav div ul li div{
+  width: 120px;
+  position: absolute;
+  background: #D0D102;
+  box-sizing:border-box;
+  display: none;
+}
+
+.nav-administrador nav > div > ul >li >div >ul >li>a{
+  padding: 10px;
+}
+
+/*Fin: Nav Basico para el Administrador*/

@@ -1,0 +1,286 @@
+<!--En las secciones de 8 que complementas las secciones de 4 (anteriores) va el contenido: tablas, graficos, informacion de personal, clientes, rutinas, y asi  -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <link rel="stylesheet" href="css/estandarCssCoto.css">
+    <title>Phaeton's Gym</title>
+  </head>
+
+  <body >
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioInstructor.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Rutinas</a>
+              <div class="">
+                <ul>
+                  <li><a href="crearRutina.html">Crear</a></li>
+                  <li><a href="visualizarRu.html">Visualizar</a></li>
+                  <li><a href="modificarParametrosRutinas.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav" href="#">Citas</a>
+              <div class="">
+                <ul>
+                  <li><a href="pruebaResistencia.html">Prueba resistencia</a></li>
+                  <li><a href="citaVisual.html">Visualizar</a></li>
+                  <li><a href="registroMedidas.html">Registrar medidas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link4" class="botonesNav" href="#">Ejercicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarEjercicio.html">Visualizar ejercicios</a></li>
+                  <li><a href="modificarEjercicios.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link5" class="botonesNav" href="#">Maquinaria</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarInfoMaquinaria.html">Informacion maquinaria</a></li>
+                  <li><a href="indexModificarInfoMaquina.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  <main class="container">
+
+    <div id="tituloPagina">
+      <h4>Modificar ejercicios</h4>
+      <!--Aca va el nombre de la pagina en un h4 -->
+    </div>
+    <!--Los tamanos se manejas asi: las columnas xs son de 12 y las medianas son de 8/4 o 12 en ciertos casos  -->
+    <section class=" infoSeccion col-xs-12 col-md-12 btnModificarEjercicios">
+      <button type="button" value="pecho" name="Pecho" id="btnPecho">Pecho</button>
+      <button type="button" value="" name="Brazo" id="btnBrazo">Brazo</button>
+      <button type="button" value="" name="Espalda" id="btnEspalda">Espalda</button>
+      <button type="button" value="" name="Pierna" id="btnPierna">Pierna</button>
+      <button type="button" value="" name="Abdomen" id="btnAbdomen">Abdomen</button>
+    </section>
+
+
+
+    <section class=" infoSeccion col-xs-12 col-md-4">
+
+      <div id="Pecho" class="container col-xs-3 col-sm-3 col-md-3 visibilidadPecho">
+        <select class="" name="pecho" onchange="ejercicioMostrarOcultarPecho(this.value)" onclick="ocultar('ejerciciosBrazo') & ocultar('ejerciciosEspalda') & ocultar('ejerciciosPierna') & ocultar('ejerciciosAbdomen')">
+          <option value="flexionesPecho">Flexiones de Pecho y mano</option>
+          <option value="aperturas">Aperturas con mancuernas</option>
+        </select>
+      </div>
+
+      <div id="Brazo" class="container col-xs-3 col-sm-3 col-md-3 visibilidadBrazo">
+        <select class="" name="" onchange="ejercicioMostrarOcultarBrazo(this.value)" onclick="ocultar('ejerciciosAbdomen') & ocultar('ejerciciosEspalda') & ocultar('ejerciciosPierna') & ocultar('ejerciciosPecho')">
+          <option value="flexionesBrazo">Flexiones</option>
+          <option value="levantamientoPesas">Levantamiento con pesas</option>
+        </select>
+      </div>
+
+      <div id="Espalda" class="container col-xs-3 col-sm-3 col-md-3 visibilidadEspalda">
+        <select class="" name="" onchange="ejercicioMostrarOcultarEspalda(this.value)" onclick="ocultar('ejerciciosBrazo') & ocultar('ejerciciosAbdomen') & ocultar('ejerciciosPierna') & ocultar('ejerciciosPecho')">
+          <option value="estiramientoCadenas">Estiramiento de cadenas posteriores</option>
+          <option value="alargamientoColumna">Alargamiento de la columna lumbar</option>
+        </select>
+      </div>
+
+      <div id="Pierna" class="container col-xs-3 col-sm-3 col-md-3 visibilidadPierna">
+        <select class="" name="" onchange="ejercicioMostrarOcultarPierna(this.value)" onclick="ocultar('ejerciciosBrazo') & ocultar('ejerciciosEspalda') & ocultar('ejerciciosAbdomen') & ocultar('ejerciciosPecho')">
+          <option value="sentadillas">Sentadillas Completas</option>
+          <option value="carro">Carro Romano</option>
+        </select>
+      </div>
+
+      <div id="Abdomen" class="container col-xs-3 col-sm-3 col-md-3 visibilidadAbdomen">
+        <select class="" name="" onchange="ejercicioMostrarOcultarAbdomen(this.value)" onclick="ocultar('ejerciciosBrazo') & ocultar('ejerciciosEspalda') & ocultar('ejerciciosPierna') & ocultar('ejerciciosPecho')">
+          <option value="abdominales">Abdominales</option>
+          <option value="elevacionPiernas">Elevacion de piernas</option>
+        </select>
+      </div>
+    </section>
+
+
+
+    <section class=" infoSeccion col-xs-12 col-md-8">
+      <div id="ejerciciosPecho" class="container col-xs-9 col-sm-9 col-md-9">
+        <div id="flexionesPecho" class="default">
+          <span><h3 id="nombreEjercicio1">Flexiones de Pecho y mano</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial1">Acostado "boca abajo" con las palmas de las manos apoyadas sobre el suelo y separadas a la misma distancia de los hombros, inicie el desplazamiento hacia arriba hasta la extensión completa de ambos brazos.</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal1">Luego inicie el descenso hasta que su cara quede cerca del suelo. Durante todo el ejercicio manenga las piernas extendidas.</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes1">No se han encontrado errores comunes</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales1">No se han encontrado lineamientos generales</p></span>
+        </div>
+        <div id="aperturas" class="oculto">
+          <span><h3 id="nombreEjercicio2">Aperturas con mancuernas</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial2">Inicie el descenso de la barra por medio de la flexión de ambos brazos.</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal2">Cuando la barra haya tocado la parte superior de su pecho, inmediatamente inicie el ascenso de la carga hasta su posición original.</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes2">No se han encontrado errores comunes</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales2">No se han encontrado lineamientos generales</p></span>
+        </div>
+      </div>
+
+      <div id="ejerciciosBrazo" class="container col-xs-9 col-sm-9 col-md-9">
+        <div id="flexionesBrazo" class="oculto">
+          <span><h3 id="nombreEjercicio3">Flexiones de brazo en el suelo</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial3">Acostado "boca abajo" con las palmas de las manos apoyadas sobre el suelo y separadas a la misma distancia de los hombros, inicie el desplazamiento hacia arriba hasta la extensión completa de ambos brazos.</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal3">Luego inicie el descenso hasta que su cara quede cerca del suelo. Durante todo el ejercicio manenga las piernas extendidas.</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes3">Subir la cola o dejar la pelvis abajo cuando elevamos el torso es un error frecuente que indica que la columna no está recta.</p>
+          <p>Movimientos bruscos al extender los brazos.</p>
+          <p>i la cabeza mira el abdomen o se moviliza durante el ejercicio estamos en riesgo de sufrir agujetas en el cuello o contracturas en la zona cercana al mismo, pues la cabeza debe permanecer alineada con el resto del cuerpo.</p></span>
+          </ul>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales3">No se han encontrado lineamientos generales</p></span>
+        </div>
+        <div id="levantamientoPesas" class="oculto">
+          <span><h3 id="nombreEjercicio4">Levantamiento de pesas con mancuerna</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial4">Sentado, se sostiene una mancuerna de forma vertical, apoyando el brazo en el muslo a la altura del codo, se flexionará el brazo hasta levantar el peso.</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal4">Por ultimo descenderemos de forma controlada hasta llegar a la posición inicial.</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes4">No se han encontrado errores comunes</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales4">No se han encontrado lineamientos generales</p></span>
+        </div>
+      </div>
+
+      <div id="ejerciciosEspalda" class="container col-xs-9 col-sm-9 col-md-9">
+        <div id="estiramientoCadenas" class="oculto">
+          <span><h3 id="nombreEjercicio5">Estiramiento de cadenas posteriores</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial5">Acostado de espalda con las rodillas extendidas, levante una pierna hasta donde sea posible, mantenga ésta posición unos segundos sin respirar</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal5">Luego vuelva a la posición basal (Debe alternar el ejercicio con ambas piernas).</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes5">No se han encontrado errores comunes</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales5">No se han encontrado lineamientos generales</p></span>
+        </div>
+        <div id="alargamientoColumna" class="oculto">
+          <span><h3 id="nombreEjercicio6">Alargamiento de la columna lumbar</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial6">Acostado de espalda, levantando la rodilla hasta llevarla al pecho cogiéndola con ambas manos</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal6">Posteriormente suelte la rodilla y vuelva a la posicion inicial (Debe alternar el ejercicio con ambas piernas).</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes6">No se han encontrado errores comunes</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales6">No se han encontrado lineamientos generales</p></span>
+        </div>
+      </div>
+
+      <div id="ejerciciosPierna" class="container col-xs-9 col-sm-9 col-md-9">
+        <div id="sentadillas" class="oculto">
+          <span><h3 id="nombreEjercicio7">Sentadillas completas</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial7">De pie, sostenga una barra con pesas sobre sus hombros, Descienda el cuerpo por medio de la flexión de ambas rodillas, manteniendo la espalda derecha.</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal7">Luego ascienda a la posición inicial.</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes7">No utilizar en este ejercicio pesas que no sean ligeras, ya que puede producir lesión crónica de rodillas.</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales7">No se han encontrado lineamientos generales</p></span>
+        </div>
+        <div id="carro" class="oculto">
+          <span><h3 id="nombreEjercicio8">Carro romano</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial8">Sentado (a) en el carro romano, coloque sus pies sobre la plataforma separados a nivel de la caderas o ligeramente por afuera de las mismas, Descendiendo lo maximo posible por medio de la flexión de ambas piernas</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal8">Posteriormente empuje el peso por medio de la extensión de ambas piernas.</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes8">No se han encontrado errores comunes</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales8">No se han encontrado lineamientos generales</p></span>
+        </div>
+      </div>
+
+      <div id="ejerciciosAbdomen" class="container col-xs-9 col-sm-9 col-md-9">
+        <div id="abdominales" class="oculto">
+          <span><h3 id="nombreEjercicio9">Abdominales</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial9">Acostado (a), coloque ambas manos sosteniendo su cabeza, elevando la mitad superior del tronco por medio de la contraccion de sus abdominales.</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="posicionFinal9">Luego Descienda el tronco de forma controlada.</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes9">No se han encontrado errores comunes</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales9">No se han encontrado lineamientos generales</p></span>
+        </div>
+        <div id="elevacionPiernas" class="oculto">
+          <span><h3 id="nombreEjercicio10">Elevación de piernas</h3></span>
+          <h4>Posicion inicial</h4>
+          <span><p id="posicionInicial10">Acostado (a), con ambas manos sujetando el extremo de una banca, eleve ambas piernas sin doblarlas.</p></span>
+          <h4>Posicion final</h4>
+          <span><p id="erroresComunes10">Luego descienda las piernas de forma controlada.</p></span>
+          <h4>Errores comunes</h4>
+          <span><p id="erroresComunes10">No se han encontrado errores comunes</p></span>
+          <h4>Lineamientos generales</h4>
+          <span><p id="lineamientosGenerales10">No se han encontrado lineamientos generales</p></span>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="infoSeccion col-xs-12 col-md-12">
+      <form class="style-2" action="index.html" method="post">
+        <div class="">
+          <label for="txtNombreEjercicio">Nombre del ejercicio</label>
+          <input type="text" name="nombreEjercicio" id="txtNombreEjercicio">
+
+          <label for="txtNuevoNombreEjercicio">Nuevo nombre del ejercicio</label>
+          <input type="text" name="nuevoNombreEjercicio" id="txtNuevoNombreEjercicio">
+
+          <label for="txtPosicionInicial">Posicion inicial</label>
+          <input type="text" name="posicionI" id="txtPosicionInicial">
+
+          <label for="txtPosicionFinal">Posicion final</label>
+          <input type="text" name="posicionF" id="txtPosicionFinal">
+
+          <label for="txtErroresComunes">Errores comunes</label>
+          <input type="text" name="errores" id="txtErroresComunes">
+
+          <label for="txtLineamientos">Lineamientos generales</label>
+          <input type="text" name="lineamientos" id="txtLineamientos">
+
+          <input type="button" value="Guardar" id="btnModificarEjercicios" onclick="modificarEjercicios()">
+        </div>
+      </form>
+    </section>
+
+
+  </main>
+  <footer>Phaetons Gym-Blue Rhino-2016</footer>
+
+  <script src="js/logicModificarEjercicios.js">
+
+  </script>
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

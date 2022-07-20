@@ -1,0 +1,126 @@
+﻿<!--En las secciones de 8 que complementas las secciones de 4 (anteriores) va el contenido: tablas, graficos, informacion de personal, clientes, rutinas, y asi  -->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phaeton's Gym</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estandarCss.css">
+    <link rel="stylesheet" href="css/styleModificarInformacionMaquinaria.css">
+
+  </head>
+  <body>
+    <header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioInstructor.html">Inicio</a></li>
+            <li><a id="link2" class="botonesNav"href="#">Rutinas</a>
+              <div class="">
+                <ul>
+                  <li><a href="crearRutina.html">Crear</a></li>
+                  <li><a href="visualizarRu.html">Visualizar</a></li>
+                  <li><a href="modificarParametrosRutinas.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav" href="#">Citas</a>
+              <div class="">
+                <ul>
+                  <li><a href="pruebaResistencia.html">Prueba resistencia</a></li>
+                  <li><a href="citaVisual.html">Visualizar</a></li>
+                  <li><a href="registroMedidas.html">Registrar medidas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link4" class="botonesNav" href="#">Ejercicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarEjercicio.html">Visualizar ejercicios</a></li>
+                  <li><a href="modificarEjercicios.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link5" class="botonesNav" href="#">Maquinaria</a>
+              <div class="">
+                <ul>
+                  <li><a href="indexMostrarInfoMaquinaria.html">Informacion maquinaria</a></li>
+                  <li><a href="indexModificarInfoMaquina.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="cerrarSesion" class="botonesNav" href="index.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div id="tituloPagina">
+
+        <h4>Modificar datos de la maquinaria</h2>
+
+      </div>
+
+      <section class=" infoSeccion col-xs-12 col-md-4">
+
+            <label for="listaMaquinasAModificar">Lista de maquinas</label>
+
+                    <select id="listaMaquinasAModificar" name="listaMaquinasAModificar" onclick="javascript:crearTblInfoMaquina(this.value);">
+                    <option value="0" selected>-GLUTE-</option>
+                    <option value="1">TRICEPS DIP</option>
+                    <option value="2">TRICEPS DIV</option>
+                    <option value="3">TRICEPS EXT</option>
+                    <option value="4">BICEPS CURL</option>
+                    <option value="5">CAMBERL CURL</option>
+                    <option value="6">SEATED ROW</option>
+                    <option value="7">VERTICA ROW</option>
+                    <option value="8">LONG PULLY</option>
+                    <option value="9">INCLINE PRESS</option>
+                    <option value="10">DONKEY CALF</option>
+                    </select>
+
+
+      </section>
+      <section  id='seccionCanvas' class=" infoSeccion col-xs-12 col-md-8">
+
+        <table id="tblEstadisticas">
+
+                  <thead>
+
+
+                  </thead>
+
+                  <tbody>
+
+
+                  </tbody>
+
+          </table>
+
+
+
+
+      </section>
+
+
+
+      <input class="botonesSeccion" type="button" id='registrar' value="Cambiar Informacion" onclick="guardarCambioInformacionmaquina()">
+    </main>
+
+
+    <footer>Phaetons Gym-Blue Rhino-2016</footer>
+
+
+
+  <script src="js/logicModificarInfoMaquina.js"></script>
+  <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+		<meta charset="UTF-8">
+	    <meta name="description" content="Este es el formulario para registrar al el encargado de medidas"/>
+	    <meta name="keywords" content="Formulario de registro para el encargado de medidas"/>
+	    <link rel="stylesheet" href="css/reset.css">
+			<link rel="stylesheet" href="css/estandarCss.css">
+			<link rel="stylesheet" href="css/styleCosultarEjercicio.css">
+	    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.jpg">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" ></script>
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maxium-scale=1.0, minium-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<title></title>
+	</head>
+
+	<body>
+
+		<header >
+      <div class="container">
+        <nav class>
+          <ul>
+            <li><a id="logo" class="botonesNav" href="#">Phaeton's Gym</a></li>
+            <li><a id="link1" class="botonesNav" href="inicioAdmin.html">Inicio</a></li>
+						<li><a id="link2" class="botonesNav"href="">Personal</a>
+              <div class="">
+                <ul>
+                  <li><a href="consultarInfoInstructoresAdmin.html">Informacion</a></li>
+                  <li><a href="consultarEstadisticasEmpleados.html">Estadisticas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link3" class="botonesNav" href="modificarDatosCliente.html">Clientes</a></li>
+            <li><a id="link4" class="botonesNav" href="#">Ejercicios</a>
+              <div class="">
+                <ul>
+                  <li><a href="#">Visualizar</a></li>
+                  <li><a href="modificarEjerciciosAdmin.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link5" class="botonesNav" href="#">Maquinaria</a>
+              <div class="">
+                <ul>
+                  <li><a href="mostrarInfoMaquinariaAdmin.html">Visualizar</a></li>
+                  <li><a href="modificarInfoMaquinariaAdmin.html">Modificar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="link6" class="botonesNav" href="citaVisualAdmin.html">Citas</a></li>
+            <li><a id="link7" class="botonesNav" href="modificarInfoGym.html">Datos Gimnasio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+        <div id="container" class="container">
+
+        <section id="seleccionDeEjercicio" class=" col-xs-12 col-md-12 col-lg-8">
+
+                 <h1>Seleccione el ejercicio</h1>
+
+                 <select name="entradalista2[]" multiple="multiple" id="listaDeEjercicios" onClick="crearEjercicio(this.value)">
+                    <optgroup id="zonaPectoral" label="Zona Pectoral">
+                        <option value="0">-Flexiones de brazo en el suelo-</option>
+                        <option value="1">-Aperturas con mancuernas-</option>
+                        <option value="2">-Cruce de pies con poleas-</option>
+                        <option value="3">-Pull-Over con mancuernas-</option>
+                        <option value="4">-Dips-</option>
+                    </optgroup>
+
+                    <optgroup  id="zonaDorsal" label="Zona Dorsal">
+                        <option value="5" selected="selected">Dominadas en barra fija</option>
+                        <option value="6">-Pull-Over con polea Alta-</option>
+                        <option value="7">-Remo horizontal con barra y manod en pronación</option>
+                        <option value="8">-Remo en barra T con apoyo al pecho</option>
+                        <option value="9">-Extensión del tronco(lumbares)</option>
+                    </optgroup>
+
+                    <optgroup id="Biceps" label="Bíceps">
+                        <option value="10">-Curl de Bícepsconcentrado con apoyo en el muslo-</option>
+                        <option value="11">-Curl de bíceps alterno tipo martillo-</option>
+                        <option value="12">-Bíceps, brazos en cruz en polea alta-</option>
+                        <option value="13">-Curl de antebrazos con barra agarre en supinación-</option>
+                        <option value="14">-Curl de Bícep en banco Scott-</option>
+                        <option value="15">-Extensión del tríceps-</option>
+                        <option value="16">-Contracción isométrica del trícep-</option>
+                    </optgroup>
+
+                    <optgroup id="triceps" label="Tríceps">
+                        <option value="17">-Extensión del codo por encima de la cabeza-</option>
+                        <option value="18">-Press francés con polea-</option>
+                        <option value="19">-Extensión vertical alternada de loc codos con mancuerna-</option>
+                        <option value="20">Extensión de codos sentado con barra-</option>
+                        <option value="21">Extensión de codos sentado con barra-</option>
+                        <option value="22">-Isométrico de rotadores externos-</option>
+                        <option value="23">-Isométrico de rotadores internos-</option>
+                    </optgroup>
+
+                    <optgroup id="abdomen" label="Abdomen">
+                        <option value="24">-Crunch-</option>
+                        <option value="25">-Elevaciones del tronco en el suelo-</option>
+                        <option value="26">-Elevaciones del tronco en el banco inclinado-</option>
+                        <option value="27">-Elevaciones de piernas en plancha inclinada con encogimientos abdominales y elevación de pelvis-</option>
+                        <option value="28">-Elevaciones de piernas suspendido en la barra fija-</option>
+                    </optgroup>
+
+                    <optgroup id="isquiotibiales" label="Isquiotibiales">
+                        <option value="29">-Curl de piernas alterno, de pie con máquina-</option>
+                        <option value="30">-Curl de piernas sentado en máquina-</option>
+                        <option value="31">-Flexión de tronco al frente-</option>
+                        <option value="32">-Nordic Curl-</option>
+                        <option value="33">-Cargada con mancuernas-</option>
+                    </optgroup>
+
+                    <optgroup  id="Pantorrilla" label="Pantorrilla">
+                        <option value="34">-Pero sobre la pelvis-</option>
+                        <option value="35">-Elevación de talones sentado con barra-</option>
+                        <option value="36">-Elevación de talones de pie en máquina-</option>
+                        <option value="37">-Pantorrilla en prensa-</option>
+                        <option value="38">-Apretón de pecho-</option>
+                        <option value="39">-Flexión isométrica-</option>
+                    </optgroup>
+
+                    <optgroup id="dorsalAncho" label="Dorsal Ancho">
+                        <option value="40">-Postura del puente-</option>
+                        <option value="41">-SuperHombre-</option>
+                    </optgroup>
+
+                </select>
+
+       </section>
+	   <section id='seccionCanvas' class="container col-xs-12 col-sm-12 col-md-4">
+
+            <table id="tablaEjercicios" class="ocultarTabla">
+                <thead >
+                    <h2 id="nombreEjercicio" class="container col-xs-12 col-sm-12 col-md-12"></h2>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td id="infoEjercicio"></td>
+                    </tr>
+                    <tr>
+                        <table id="tablaEjercicios2" class="ocultarTabla">
+                            <tr>
+                                <td >
+                                    <h2 id="tituloEjercicioInicial"></h2>
+                                    <div id="imgEjercicioInicial"></div>
+                                </td>
+                                <td id="tdTituloEjercicioFinal" class="ocultarTabla">
+                                    <h2 id="tituloEjercicioFinal"></h2>
+                                    <div id="imgEjercicioFinal"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+	  </section>
+	</div>
+	<script src="js/logicMostrarEjerciciosv1.js"></script>
+	</body>
+</html>
